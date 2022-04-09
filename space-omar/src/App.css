@@ -5,7 +5,7 @@
 
 .App {
   text-align: center;
-  background-color: black;
+  background: linear-gradient(223deg, rgb(61, 80, 138) 7.46%, rgb(0, 0, 0) 50.74%);
 }
 
 .App-logo {

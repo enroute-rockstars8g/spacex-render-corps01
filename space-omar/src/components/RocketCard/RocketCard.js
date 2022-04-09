@@ -7,21 +7,23 @@ const RocketCard = ({rocket}) => {
     return (
     <div className="card">
       <div className="card-header">
-        <p className="card-header-data">{rocket.id}</p>
+        <p className="card-header-data">ID: {rocket.id}</p>
         <div className="card-header-name">
           <p>{rocket.company}</p>
-          <h4>{rocket.rocket_name}</h4>
+          <h2>{rocket.rocket_name}</h2>
         </div>
       </div>
       <div className="card-image">
         <img src={rocket.flickr_images[0]} alt="#"/>
       </div>
       <div className="card-desc">
-        <p className="card-body-desc">First Flight</p> <span> {rocket.first_flight} </span>
-        <p className="card-body-desc">Height</p> <span> {rocket.height[0]} </span>
-        <p className="card-body-desc">Mass</p>  <span> {rocket.mass[0]} </span>
+        <div>
+        <p className="card-body-desc"><b>First Flight: </b>{rocket.first_flight}</p>
+        <p className="card-body-desc"><b>Height: </b> {rocket.height.meters} M</p>
+        <p className="card-body-desc"><b>Mass: </b> {rocket.mass.kg} KG</p>
         <p className="card-body-desc">{rocket.description}</p>
-        <p className="card-footer-text"><a href="#">{rocket.wikipedia}</a></p>
+        </div>
+        <p className="card-footer-text">- SPACEX-API - <a href={rocket.wikipedia}> Wikipedia Link</a></p>
       </div>
     </div>
   );

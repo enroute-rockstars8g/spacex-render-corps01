@@ -16,7 +16,7 @@ const Rockets = () => {
 
   return (
     <>
-      <h1>SpaceX</h1>
+      <h1 className="title">SPACE X TRADING CARD GAME</h1>
       <div className="cards-container">
         {rocketsList.map((rocket, index) => (
 rocket? <RocketCard key={index} rocket={rocket} /> : <></>

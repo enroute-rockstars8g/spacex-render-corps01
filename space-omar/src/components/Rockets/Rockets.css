@@ -4,3 +4,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.title{
+  color: beige;
+margin-top: 0;
+padding-top: 5rem;
+}
