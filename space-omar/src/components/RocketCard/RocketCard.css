@@ -1,6 +1,4 @@
 .card {
-    /* flex: 0 0 40%; */
-    color: whitesmoke;
     width: 100%;
     margin: 1rem;
     padding: .2rem 1.2rem;
@@ -45,12 +43,13 @@
 .card-header-name p{
     margin: 0.6rem 0;
     padding: .5rem;
-    border-radius: .5rem;
+    border-radius: .2rem;
     background-color: #ff8000;
 }
 
-.card-header-name h4{
-    margin: 0.6rem 0;
+.card-header-name h2{
+    background-color: #ECE5F0;
+    padding: .2rem;
 }
 
 .card-body-desc{
@@ -59,9 +58,28 @@
     word-break: normal;
 }
 
+.card-body-desc-top{
+    text-align: justify;
+    font-size: small;
+    word-break: normal;
+    margin: unset;
+}
+
+span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.succ{
+    background-color: #4182DC;
+    padding: .1rem .2rem;
+    border-radius: .5rem;
+    font-size: small;
+}
+
 .card-desc{
     margin: 1rem 0;
-    background-color: #4182DC;
+    background-color: #ECE5F0;
     padding: 1rem;
     border-radius: .5rem;
     height: 16rem;

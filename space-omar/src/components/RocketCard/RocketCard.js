@@ -18,12 +18,12 @@ const RocketCard = ({rocket}) => {
       </div>
       <div className="card-desc">
         <div>
-        <p className="card-body-desc"><b>First Flight: </b>{rocket.first_flight}</p>
-        <p className="card-body-desc"><b>Height: </b> {rocket.height.meters} M</p>
+        <span><p className="card-body-desc"><b>First Flight: </b>{rocket.first_flight}</p> <p className="succ">{rocket.success_rate_pct}% SUCC</p></span>
+        <p className="card-body-desc-top"><b>Height: </b> {rocket.height.meters} M</p>
         <p className="card-body-desc"><b>Mass: </b> {rocket.mass.kg} KG</p>
         <p className="card-body-desc">{rocket.description}</p>
         </div>
-        <p className="card-footer-text">- SPACEX-API - <a href={rocket.wikipedia}> Wikipedia Link</a></p>
+        <p className="card-footer-text">- SPACEX-API - <a href={rocket.wikipedia}> {rocket.rocket_name}</a></p>
       </div>
     </div>
   );
